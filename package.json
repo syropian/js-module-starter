@@ -1,0 +1,30 @@
+{
+  "name": "js-module-starter",
+  "version": "1.0.0",
+  "description": "A simple boilerplate for quickly creating an open-source JS module.",
+  "main": "dist/my-module.cjs.js",
+  "module": "dist/my-module.es.js",
+  "unpkg": "dist/my-module.min.js",
+  "files": ["dist"],
+  "repository": "https://github.com/syropian/js-module-starter",
+  "author": "Collin Henderson <collin@syropia.net>",
+  "license": "MIT",
+  "scripts": {
+    "build": "bili",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "bili": {
+    "format": ["cjs", "umd-min", "es"],
+    "moduleName": "MyModule"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "bili": "^3.0.15",
+    "jest": "^22.4.3"
+  }
+}
